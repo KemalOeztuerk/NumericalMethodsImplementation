@@ -1,0 +1,9 @@
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\bin\Debug\NumericalMethods.exe.config
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\bin\Debug\NumericalMethods.exe
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\bin\Debug\NumericalMethods.pdb
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\obj\Debug\NumericalMethods.csproj.AssemblyReference.cache
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\obj\Debug\NumericalMethods.Properties.Resources.resources
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\obj\Debug\NumericalMethods.csproj.GenerateResource.cache
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\obj\Debug\NumericalMethods.csproj.CoreCompileInputs.cache
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\obj\Debug\NumericalMethods.exe
+C:\Users\kemal\Desktop\NumericalMethodsImplementation\NumericalMethods\NumericalMethods\obj\Debug\NumericalMethods.pdb

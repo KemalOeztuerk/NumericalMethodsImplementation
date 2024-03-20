@@ -88,8 +88,6 @@ namespace NumericalMethods
 
         static void Main()
         {
-            Kiris(0, 7, 0.003);
-            Sekant(0,7);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

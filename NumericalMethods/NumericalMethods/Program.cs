@@ -117,6 +117,7 @@ namespace NumericalMethods
 
         static void Main()
         {
+<<<<<<< HEAD
             /*
             //Sekant örnek
             Console.WriteLine(Sekant(0,7,0.0001,1000)); // {başlangıç, bitiş, epsilon, max iterasyon}
@@ -132,6 +133,8 @@ namespace NumericalMethods
             Console.WriteLine(Netwon_Raphson(f,df,tahmin));
             */
 
+=======
+>>>>>>> 5415502688161e5d4c78bb96395b08dd23273247
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

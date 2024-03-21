@@ -12,6 +12,8 @@ namespace NumericalMethods
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+
+        // Sekant Yöntemi için
         static double Function(double x)
         {
             return x * x * x - 4; // Örnek olarak x^3 - 4 fonksiyonunu kullandık
@@ -41,7 +43,7 @@ namespace NumericalMethods
             return x2;
         }
 
-        //x^2+3x-19 [1,7] Aralığında Epsilon: 0.003
+        //x^2+3x-19 [1,7] Aralığında Epsilon: 0.003, Kiriş yöntemi için
         static double F(double x)
         {
             return x * x + 3 * x - 19;
@@ -85,11 +87,51 @@ namespace NumericalMethods
             return x2;
         }
 
+        // Fonksiyonun türevini hesapla, Newton-Raphson için
+        static double Turev(Func<double, double> f, double x, double h = 0.0001)
+        {
+            return (f(x + h) - f(x)) / h;
+        }
+
+        // Newton-Raphson yöntemi ile kök bulma
+        static double Netwon_Raphson(Func<double, double> f, Func<double, double> df, double tahmin, double tolerans = 0.0001)
+        {
+            double x0 = tahmin;
+            double x1 = x0 - f(x0) / df(x0);
+            int iterasyon = 0;
+
+            while (Math.Abs(x1 - x0) > tolerans && iterasyon < 1000)
+            {
+                x0 = x1;
+                x1 = x0 - f(x0) / df(x0);
+                iterasyon++;
+            }
+
+            if (iterasyon >= 1000)
+            {
+                throw new Exception("Algoritma 1000 yinelemede yakınsamadı.");
+            }
+
+            return x1;
+        }
 
         static void Main()
         {
-            Kiris(0, 7, 0.003);
-            Sekant(0,7);
+            /*
+            //Sekant örnek
+            Console.WriteLine(Sekant(0,7,0.0001,1000)); // {başlangıç, bitiş, epsilon, max iterasyon}
+
+            // Kiriş örnek
+            Console.WriteLine(Kiris(0,7,0.000001)); // {başlangıç, bitiş, epsilon}
+            
+            // Newton-Raphson örnek
+            Func<double, double> f = x => x * x - 5;
+            Func<double, double> df = x => 2 * x;
+            // Başlangıç tahmini
+            double tahmin = 2.0;
+            Console.WriteLine(Netwon_Raphson(f,df,tahmin));
+            */
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
